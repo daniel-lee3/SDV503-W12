@@ -11,3 +11,8 @@ Node.js readline practice
 
 - Callbacks need to be **nested** so each question waits for the previous one. This pattern is sometimes called "callback hell".
 - Example 10 shows how `async/await` makes this much cleaner.
+
+- `fs.createReadStream(path)` opens a file as a stream - data flows in chunks instead of being loaded all at once.
+- `crlfDelay: Infinity` correctly handles Widnows line endings (\r\n).
+- `rl.on('line', cb)` is the standard event-driven way to consume lines.
+- `rl.on('close', cb)` runs when the file has been fully read

@@ -8,3 +8,6 @@ Node.js readline practice
 
 - Anything the user types is a **string**. Use `number(...)` (or `parseInt`,`parseFloat`) to turn it into a number.
 - `Number.isNaN(value) is the safe way to check that a conversion worked.
+
+- Callbacks need to be **nested** so each question waits for the previous one. This pattern is sometimes called "callback hell".
+- Example 10 shows how `async/await` makes this much cleaner.
